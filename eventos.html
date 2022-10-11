@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function acao(){
+            alert('Evento disparado')
+        }
+
+        function acao(){
+            alert('O mouse deixou a regiao do elmemento')
+        }
+    </script>
+</head>
+<body>
+    <div onclick="acao()" style="background: #ccc; height: 160px; width: 160px;"><br></div>
+    <div ondblclick="acao()" style="background: #ccc; height: 160px; width: 160px;"><br></div>
+    <div onmouseup="acao()" style="background: #ccc; height: 160px; width: 160px;"><br></div>
+    <div onmousehover="acao()" style="background: #ccc; height: 160px; width: 160px;"><br></div>
+    <div onclick="acao()" onmouseout="acao2()" style="background: #ccc; height: 160px; width: 160px;"><br></div>
+</body>
+</html>

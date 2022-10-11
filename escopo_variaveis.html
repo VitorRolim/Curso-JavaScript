@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+    <script>
+
+
+        //Existem 3 tipos de escopos:global,função e  bloco
+
+        var serie = 'House of Dragons'
+
+        //escopo de bloco
+        if(true){
+            var serie2 = 'rick and morty'
+            document.write(serie)
+        }
+
+        document.write(serie2)
+
+        document.write('</br>')
+
+        function x(){
+            
+            var serie3 = 'berserk'
+            document.write(serie)
+            document.write(serie2)
+        }
+
+        
+
+        x()
+
+        document.write('</br>')
+        document.write(serie3)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
