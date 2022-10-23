@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        //FOR EACH = PARA CADA ARRAY A FUNCTION CALLBACK SERA EXECUTADA
+
+        var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernandes']
+        
+        listaFuncionarios['x'] = 'Viviane'
+        listaFuncionarios[false] = 'Clauido'
+        listaFuncionarios[3] = 'Leon'
+        listaFuncionarios[27] = 'Ada'
+        listaFuncionarios[-12] = 'JOse'
+
+
+        var f = function(valor, indice){
+            console.log(valor, indice)
+        }
+        listaFuncionarios.forEach(f)
+        /*console.log(listaFuncionarios)
+        console.log(listaFuncionarios[3])
+
+        listaFuncionarios.forEach(function(valor, indice, array){
+            console.log('indice: ' + indice + ' | valor: ' + valor)
+
+            if(valor == 'Lucas'){
+                array[indice] = 'Ana'
+            }
+        })
+
+        console.log(listaFuncionarios)
+        document.write('<br /> ' + listaFuncionarios[3])
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
